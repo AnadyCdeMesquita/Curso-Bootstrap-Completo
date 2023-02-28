@@ -1,0 +1,11 @@
+.vertical{
+width: 200px;
+height: 200px;
+position:relative;
+
+}
+
+#direita{
+position: absolute;
+left: 600px;
+}

@@ -1,0 +1,18 @@
+
+.container{
+border: 8px solid blue;
+height: 100vh;
+padding: 100px;
+}
+
+.row{
+border: 5px dashed green;
+height: 300px;
+padding: 100px;
+
+
+}
+
+.col{
+border: 3px dotted red;
+}

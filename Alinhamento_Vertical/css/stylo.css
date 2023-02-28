@@ -1,0 +1,45 @@
+
+.container{
+margin-top:200px;
+border: 8px solid blue;
+
+}
+
+.row{
+border: 5px dashed green;
+
+
+}
+
+.col{
+border: 3px dotted red;
+}
+
+.col-4{
+    border: 3px dotted red;
+    }
+    
+
+#tamanholimitado{
+width: 800px;
+height: 400px;
+}
+
+#rowlimitada{
+    height: 100%;
+    width: 100%;
+
+}
+
+#tamanhocol{
+    width: 100%;
+
+}
+
+#container2{
+height: 500px;
+}
+
+#row2{
+height: 100%;
+}

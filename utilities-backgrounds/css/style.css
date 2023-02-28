@@ -1,0 +1,58 @@
+
+
+body{
+margin-bottom: 500px;
+
+}
+div.display {
+width: 200px;
+height: 150px;
+font-size: 80px;
+background-color: aqua;
+}
+
+.w-25{
+background-color: aquamarine;
+}
+
+.w-50{
+    background-color: rgb(175, 177, 186);
+    }
+
+.w-75{
+        background-color: rgb(255, 127, 138);
+        }
+        
+.w-100{
+            background-color: rgb(150, 127, 255);
+            }
+
+.w-auto{
+background-color: cadetblue;
+}
+
+.h-25{
+    background-color: aquamarine;
+    }
+    
+    .h-50{
+        background-color: rgb(175, 177, 186);
+        }
+    
+    .h-75{
+            background-color: rgb(255, 127, 138);
+            }
+            
+    .h-100{
+                background-color: rgb(150, 127, 255);
+                }
+    
+    .h-auto{
+    background-color: cadetblue;
+    }
+
+    .p-2{
+    background-color: aqua;
+    
+    
+    }

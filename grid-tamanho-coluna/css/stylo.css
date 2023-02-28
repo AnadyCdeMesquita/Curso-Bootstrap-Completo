@@ -1,0 +1,22 @@
+
+.container{
+border: 8px solid blue;
+height: 100vh;
+padding: 100px;
+}
+
+.row{
+border: 5px dashed green;
+height: 300px;
+padding: 100px;
+
+
+}
+
+.col-5,
+.col-7,
+.col-11,
+.col-1{
+
+border: 3px dotted red;
+}

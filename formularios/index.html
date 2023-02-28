@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>TABELA</title>
+</head>
+
+<body>
+  <h4>DIVIDIR OS INPUTS EM DIV
+    o aria-describedby USA SE QUISER PARA DEIXAR ALGUMA INFORMAÇÃO ABAIXO INPUT, EXEMPLO DE FORM EMAIL</h4>
+  <!--DIVIDIR OS INPUTS EM DIV
+            o aria-describedby USA SE QUISER PARA DEIXAR ALGUMA INFORMAÇÃO NO INPUT, EXEMPLO DE FORM EMAIL-->
+  <div class="col-6 m-4">
+    <h2>Formulário de Registro</h2>
+    <form>
+      <div class="mb-4">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+          placeholder="insira seu email">
+        <div id="emailHelp" class="form-text">Nunca compartilharemos seu email.</div>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+      <div class="mb-4 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1"></label>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1"></label>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1"></label>
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </div>
+
+  <!--DESABILITAR -CRIA-SE O FIELDSET-->
+  <div class="col-6 m-4">
+    <h2>Formulário de Registro</h2>
+    <form>
+      <fieldset disabled>
+        <div class="mb-4">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+            placeholder="insira seu email">
+          <div id="emailHelp" class="form-text">Nunca compartilharemos seu email.</div>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <div class="mb-4 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1"></label>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1"></label>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1"></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <!--CONTROLE DE FORMULÁRIO-->
+  <!--DIMENSIONAMENTO Dimensionamento
+Defina alturas usando classes como .form-control-lge .form-control-sm.-->
+
+  <div class="col-8 m-4">
+    <input class="form-control form-control-lg" type="text" placeholder="tamanho largo"
+      aria-label=".form-control-lg example">
+    <input class="form-control" type="text" placeholder="padrão" aria-label="default input example">
+    <input class="form-control form-control-sm" type="text" placeholder="tamanho pequeno"
+      aria-label=".form-control-sm example">
+  </div>
+
+  <!--TEXT AREA  HÁ ALTERAÇÃO NO FORM CONTROL SM OU LG-->
+  <div class="col-4 m-4">
+
+    <label class="input-group-text">Conteúdo</label>
+    <textarea class="form-control" aria-label="With textarea" rows="5" cols="5"></textarea>
+  </div>
+  </div>
+
+  <div class="col-4 m-4">
+
+    <label class="input-group-text">Conteúdo</label>
+    <textarea class="form-control-sm" aria-label="With textarea" rows="5" cols="5"></textarea>
+  </div>
+  </div>
+
+
+  <div class="col-4 m-4">
+
+    <label class="input-group-text">Conteúdo</label>
+    <textarea class="form-control-lg" aria-label="With textarea" rows="5" cols="5"></textarea>
+  </div>
+  </div>
+
+  <!--REDONDLY ACRESCENTAR ID E NAME NO INPUT-->
+  <h2>Input somente leitura onlyread</h2>
+  <div class="col-8 m-4">
+    <label for="email">Email</label>
+    <input class="form-control" type="text" value="anady610@gmail.com" aria-label="readonly input example" readonly
+      id="email" name="email">
+  </div>
+
+  <h2>Input somente leitura onlyread- texto não aparece em caixa</h2>
+  <!--NA CLASSE FORM-CONTROL-PLAINTEXT (O TEXTO NÃO APARECE DENTRO DE UMA CAIXA DE FORMULARIO)-->
+  <div class="mb-4 m-5">
+    <label for="staticEmail" class="col-sm-2 col-form-label">E-mail</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+
+  </div>
+
+  <!--ENTRADA DE ARQUIVOS-->
+  <h2>ANEXAR ARQUIVOS</h2>
+  <div class="col-8 m-4">
+    <label for="arquivo" class="form-label">Anexar apenas um arquivo</label>
+    <input class="form-control" type="file" id="arquivo">
+  </div>
+  <div class="col-8 m-4">
+    <label for="multiplosarquivos" class="form-label">Multiple files input example</label>
+    <input class="form-control" type="file" id="multiplosarquivos" multiple>
+  </div>
+  <div class="col-8 m-4">
+    <label for="formFileDisabled" class="form-label">Input desabilitado</label>
+    <input class="form-control" type="file" id="formFileDisabled" disabled>
+  </div>
+  <div class="col-8 m-4">
+    <label for="formFileSm" class="form-label">Small file input example</label>
+    <input class="form-control form-control-sm" id="formFileSm" type="file">
+  </div>
+  <div>
+    <label for="formFileLg" class="form-label">Large file input example</label>
+    <input class="form-control form-control-lg" id="formFileLg" type="file">
+  </div>
+
+  <!--DATA LIST-->
+  <h2>DATALIST</h2>
+  <div class="col-8 m-5">
+    <label for="datalista" class="form-label">Escolha o país</label>
+    <input class="form-control" list="listadeopcoes" id="datalista" placeholder="Escolha as cidades">
+    <datalist id="listadeopcoes"> <!--list = id da tag datalist-->
+      <option value="San Francisco">
+      <option value="New York">
+      <option value="Seattle">
+      <option value="Los Angeles">
+      <option value="Chicago">
+    </datalist>
+
+  </div>
+
+  <!--SELECT-->
+  <!--Nessa opção de selecionar somente uma opção, pode se colocar selected-->
+  <div class="col-8 m-5">
+    <label class="form-label" for="selecao">Escolha sua opção</label>
+    <select class="form-select" name="selecao" id="selecao">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <!--CHECKBOX vc pode usar checked e disabled ao mesmo tempo-->
+  <h2>CHECKBOX: pode marcar mais de uma opção</h2>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Opção 1
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Opção 2
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Opção 3
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+    <label class="form-check-label" for="flexCheckDefault">
+      Opção 4
+    </label>
+  </div>
+
+  <h3>Checkbox em Linha</h3>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+  </div>
+
+  <!--RADIO-->
+  <h2>OPÇÃO RADIO SÓ PODE ESCOLHER UMA OPÇÃO</h2>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      OPÇÃO 1
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      OPÇÃO 2 </label>
+  </div>
+
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      OPÇÃO 3 CHECKED
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" disabled>
+    <label class="form-check-label" for="flexRadioDefault2">
+      OPÇÃO 4 DESABILITADO
+    </label>
+  </div>
+
+  <!--RANGE-->
+  <h2>RANGE</h2>
+  <div class="col-8 m-4">
+    <label for="customRange3" class="form-label">Avalie minha nota</label>
+    <input type="range" class="form-range" min="0" max="5" step="2" id="customRange3">
+  </div>
+
+  <!--SWITCH-->
+  <h2>SWITCH PRÓPRIO DO BOOTSTRAP</h2>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">SWITCH PADRÃO</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">SWITCH CHECKED</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">SWITCH DESABILITADO</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">SWITCH DESABILITADO CHECKED</label>
+  </div>
+
+  <!--INPUTS DE ENTRADA-->
+  <h2>INPUTS DE ENTRADA</h2>
+  <div class="col-4 m-4">
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+        aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <span class="input-group-text" id="basic-addon2">@example.com</span>
+    </div>
+
+    <div class="input-group">
+      <label for="basic-url" class="form-label">Your vanity URL</label>
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      <div class="form-text">Example help text goes outside the input group.</div>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+      <span class="input-group-text">.00</span>
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+      <span class="input-group-text">@</span>
+      <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-text">With textarea</span>
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+  </div>
+
+  <!--CORES-->
+
+  <h2>CORES</h2>
+  <div class="col-8 m-4">
+    <label for="exampleColorInput" class="form-label">Cores</label>
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+      title="Escolha a sua cor">
+  </div>
+
+  <!--LABEL FLUTUANTE-->
+  <h2> LABEL FLUTUANTE PADRÃO GOOGLE</h2>
+  <!--OBS: TEM QUE TER O PLACEHOLDER, O LABEL SOBE-->
+  <div class="col-8 m-4">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+  </div>
+
+  <!--LAYOUTS COM FORMS-->
+  <h1> LAYOUTS COM FORMS</h1>
+  <div class=" container col-10 mb-4">
+    <h2>Cadastra-se preenchendo o Formulário</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label" for="email">E-mail</label>
+        <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu email">
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label" for="email">Senha</label>
+        <input class="form-control" type="password" id="password" name="password" placeholder="Digite sua Senha">
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label" for="cep">CEP</label>
+        <input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu CEP">
+      </div>
+
+      <div class="col-md-10">
+        <label class="form-label" for="rua">Rua</label>
+        <input class="form-control" type="text" id="rua" name="rua" placeholder="Digite sua rua">
+      </div>
+
+      <div class="col-md-2">
+        <label class="form-label" for="numero">Nº</label>
+        <input class="form-control" type="text" id="numero" name="numero" placeholder="Nº">
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label" for="cidade">Cidade</label>
+        <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Cidade">
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label" for="estado">Estado</label>
+        <select class="form-select" name="estado" id="estado">
+          <option selected>Escolha seu Estado</option>
+          <option value="1">Ceará</option>
+          <option value="2">Rio Janeiro</option>
+          <option value="3">São Paulo</option>
+          <option value="4">Minas Gerais</option>
+          <option value="5">Rio G. do Sul</option>
+          <option value="6">Mato G. do Sul</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="newsletter">
+        <label class="form-check-label" for="newsletter">
+          Receber Newsletter
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+    <button type="submit" class="btn btn btn-primary">Cadastrar</button>
+  </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

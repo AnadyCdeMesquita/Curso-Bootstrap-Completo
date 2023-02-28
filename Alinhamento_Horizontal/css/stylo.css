@@ -1,0 +1,31 @@
+
+.container{
+border: 8px solid blue;
+height: 400px;
+padding: 100px;
+}
+
+.row{
+border: 5px dashed green;
+height: 100px;
+padding: 50px;
+
+
+}
+
+.col-4{
+
+border: 3px dotted red;
+}
+
+#container2,
+#container3,
+#container4,
+#container5,
+#container6{
+    margin-top: 300px;
+    border: 8px solid blue;
+    height: 400px;
+    padding: 100px;
+
+}
